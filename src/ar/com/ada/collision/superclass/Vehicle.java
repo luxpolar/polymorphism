@@ -36,10 +36,7 @@ public class Vehicle {
     }
 
     public String technicalSheet() {
-        return "Vehículo { marca = " + brand +
-                ", modelo = " + model +
-                ", año = " + year +
-                " } Este vehículo no tiene categoría asignada.";
+        return this.toString() + "Este vehículo no tiene categoría asignada.";
     }
 
     @Override
