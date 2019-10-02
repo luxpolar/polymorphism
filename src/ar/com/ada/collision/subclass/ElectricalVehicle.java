@@ -30,9 +30,9 @@ public class ElectricalVehicle extends Vehicle {
         if (getYear() < 2007) {
             return "No existe modelo para este año.";
         } else {
-            return "Vehículo eléctrico { marca = " + getBrand() +
-                    ", modelo = " + getModel() +
-                    ", año = " + getYear() +
+            return "Vehículo eléctrico { marca = " + this.getBrand() +
+                    ", modelo = " + this.getModel() +
+                    ", año = " + this.getYear() +
                     " } Es un auto de última tecnología!";
         }
     }
