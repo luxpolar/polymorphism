@@ -10,9 +10,11 @@ public class SportsVehicle extends Vehicle {
     public SportsVehicle() {
 
     }
+
     public SportsVehicle(Integer rpm) {
         this.rpm = rpm;
     }
+
     public SportsVehicle(Integer rpm, String brand, String model, Integer year) {
         this.rpm = rpm;
         this.setBrand(brand);
@@ -23,6 +25,7 @@ public class SportsVehicle extends Vehicle {
     public void setRpm(Integer rpm) {
         this.rpm = rpm;
     }
+
     public Integer getRpm() {
         return rpm;
     }
@@ -55,6 +58,7 @@ public class SportsVehicle extends Vehicle {
     public int hashCode() {
         return -32 * Objects.hash(getBrand(), getModel(), getYear(), rpm);
     }
+
     @Override
     public String toString() {
         return "ElectricalVehicle { brand = " + getBrand() +
@@ -62,6 +66,7 @@ public class SportsVehicle extends Vehicle {
                 ", year = " + getYear() +
                 ", rpm = " + rpm + " }";
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

@@ -11,9 +11,9 @@ public class App {
         ElectricalVehicle electricalVehicle1 = new ElectricalVehicle(302, "Nissan", "Tiida", 2016);
         ElectricalVehicle electricalVehicle2 = new ElectricalVehicle(400, "Nissan", "Tiida", 2017);
         ElectricalVehicle electricalVehicle3 = new ElectricalVehicle(500, "Nissan", "Tiida", 2019);
-        SportsVehicle sportsVehicle1 = new SportsVehicle(150, "Mercedes Benz", "EQ", 2010);
+        SportsVehicle sportsVehicle1 = new SportsVehicle(40, "Mercedes Benz", "EQ", 2010);
         SportsVehicle sportsVehicle2 = new SportsVehicle(200, "Mercedes Benz", "EQ", 2015);
-        SportsVehicle sportsVehicle3 = new SportsVehicle(300, "Mercedes Benz", "EQ", 2018);
+        SportsVehicle sportsVehicle3 = new SportsVehicle(500, "Mercedes Benz", "EQ", 2018);
         Truck truck1 = new Truck(70, "Toyota", "Dina", 2014);
         Truck truck2 = new Truck(90, "Toyota", "Dina", 2015);
         Truck truck3 = new Truck(120, "Toyota", "Dina", 2017);
@@ -22,8 +22,8 @@ public class App {
                 electricalVehicle1, electricalVehicle2, electricalVehicle3,
                 sportsVehicle1, sportsVehicle2, sportsVehicle3,
                 truck1, truck2, truck3};
-        for (int i = 0 ; i < array.length ; i++) {
-            System.out.println("elemento " + i + "= " + array[i].technicalSheet());
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("elemento " + i + " = " + array[i].technicalSheet());
         }
     }
 }

@@ -10,22 +10,27 @@ public class ElectricalVehicle extends Vehicle {
     public ElectricalVehicle() {
 
     }
+
     public ElectricalVehicle(Integer potency) {
         this.potency = potency;
     }
+
     public ElectricalVehicle(Integer potency, String brand, String model, Integer year) {
         this.potency = potency;
         this.setBrand(brand);
         this.setModel(model);
         this.setYear(year);
     }
+
     public void setPotency(Integer potency) {
         this.potency = potency;
 
     }
-    public Integer getPotency(){
+
+    public Integer getPotency() {
         return potency;
     }
+
     public String technicalSheet() {
         if (getYear() < 2007) {
             return "No existe modelo para este año.";
@@ -36,10 +41,12 @@ public class ElectricalVehicle extends Vehicle {
                     " } Es un auto de última tecnología!";
         }
     }
+
     @Override
     public int hashCode() {
         return 41 * Objects.hash(getBrand(), getModel(), getYear(), potency);
     }
+
     @Override
     public String toString() {
         return "ElectricalVehicle { brand = " + getBrand() +
@@ -47,6 +54,7 @@ public class ElectricalVehicle extends Vehicle {
                 ", year = " + getYear() +
                 ", potency = " + potency + " }";
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
